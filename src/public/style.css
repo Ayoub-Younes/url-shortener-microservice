@@ -1,0 +1,111 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  background-color: #F5F5F5;
+  color: #333;
+  line-height: 1.6;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #6A0DAD ;
+  color: #FFA500;
+  padding: 20px 0;
+}
+
+.subtitle {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+main {
+  margin: 20px auto;
+  width: 80%;
+}
+
+section {
+  margin: 20px 0;
+}
+
+fieldset{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+a {
+  color: #6A0DAD;
+}
+
+p {
+  margin: 10px 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2, h3 {
+  color: #FF4500;
+}
+
+form {
+  margin: 15px auto;
+  text-align: left;
+  width: 400px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input[type="text"] {
+  width: 70%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+input[type="submit"] {
+  background-color: #FF4500;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #E63946;
+}
+
+.instructions {
+  margin-bottom: 15px;
+  font-style: italic;
+  color: #666;
+}
+
+
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+
+.code {
+  background-color: #e8e8e8;
+  padding: 5px;
+  border-radius: 3px;
+  display: inline-block;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>URL Shortener Microservice</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <h1>URL Shortener Microservice</h1>
+      <p class="subtitle">A simple API to shorten long URLs and redirect to them</p>
+    </header>
+    <main>
+      <section class="info">
+        <h2>Overview</h2>
+        <p>This microservice allows users to shorten long URLs into a simple numeric code. The shortened URL will then redirect the user to the original long URL, making it easier to share and manage.</p>
+      </section>
+      
+      <section class="example-post">
+        <h2>Create a Short URL</h2>
+        <p class="instructions">Enter a valid URL in the form below, and the service will generate a short URL for you:</p>
+        <form action="api/shorturl" method="POST">
+          <fieldset>
+            <legend>URL Shortener Form</legend>
+            <label for="url_input">URL:</label>
+            <input
+              id="url_input"
+              type="text"
+              name="url"
+              placeholder="https://www.example.com"
+              required
+            />
+            <input type="submit" value="Shorten URL" />
+          </fieldset>
+        </form>
+        <p>Example: POST <code>[this_project_url]/api/shorturl</code> with <code>https://www.google.com</code></p>
+      </section>
+
+      <section class="example-get">
+        <h2>Redirect with Short URL</h2>
+        <p>After creating a short URL, use it to get redirected back to the original URL. Here's an example:</p>
+        <a href="[this_project_url]/api/shorturl/3">[this_project_url]/api/shorturl/3</a>
+        <h3>Will Redirect To:</h3>
+        <p>https://github.com</p>
+      </section>
+
+      <section class="note">
+        <h3>Important Note:</h3>
+        <p>This microservice is designed for demonstration purposes. It shows how URL shortening and redirection work through a simple API setup.</p>
+      </section>
+    </main>
+    
+    <footer>
+      <p>Created for demonstration of a simple URL shortening API.</p>
+      <p><strong>Note:</strong> This service is for educational use and may not handle large-scale production traffic.</p>
+    </footer>
+  </body>
+</html>
